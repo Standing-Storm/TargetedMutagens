@@ -3,7 +3,7 @@
     "id": "targ_mutagen_claws_retract",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
-    "name": { "str": "targeted mutagen: long fingernails" },
+    "name": { "str": "targeted mutagen: retractable claws" },
     "description": "A processed targeted mutagenic primer. Looking at it makes your fingers itch.",
     "looks_like": "iv_mutagen",
     "color": "yellow",
