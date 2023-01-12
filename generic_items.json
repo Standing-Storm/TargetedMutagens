@@ -3,7 +3,7 @@
       "id": "targ_gen_mutate_spell",
       "type": "SPELL",
       "name": { "str": "Targeted Mutagen Mutate Spell" },
-      "description": "A spell to allow targeted mutagens to build off of. If you see this it's a bug.,
+      "description": "A spell to allow targeted mutagens to build off of. If you see this it's a bug.",
       "valid_targets": [ "self" ],
       "shape": "blast",
       "effect": "mutate",
