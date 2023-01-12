@@ -22,6 +22,7 @@
     "type": "SPELL",
     "copy-from": "targ_gen_mutate_spell",
     "description": "Long fingernails.",
+    "flags": [ "MUTATE_TRAIT" ],
     "effect-str": "NAILS"
   },
   {
