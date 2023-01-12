@@ -1,4 +1,20 @@
 [
-{
-}
+  {
+    "id": "targ_mutagen_fingernails",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "targeted mutagen: long fingernails" },
+    "description": "A processed mutagenic primer. Looking at it makes your fingers itch.",
+    "looks_like": "iv_mutagen",
+    "color": "yellow",
+    "use_action": {
+      "type": "cast_spell", 
+      "spell_id": "targ_mutate_fingernails", 
+      "no_fail": true, 
+      "level": 0
+      "activation_message": "You inject the targeted mutagenic primer.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen", 150, 250 ] ]
+    }
+  },
 ]
