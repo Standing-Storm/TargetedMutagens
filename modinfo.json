@@ -1,0 +1,12 @@
+ 	[
+	  {
+	    "type": "MOD_INFO",
+	    "id": "targetedmutagen",
+	    "name": "Targeted mutagens",
+	    "authors": [ "StandingStorm" ],
+	    "maintainers": [ "StandingStorm" ],
+	    "description": "Psionic powers for Cataclysm",
+	    "category": "items",
+	    "dependencies": [ "dda" ]
+	  }
+	]
