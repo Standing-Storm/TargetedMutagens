@@ -25,6 +25,7 @@
     "valid_targets": [ "self" ],
     "shape": "blast",
     "effect": "mutate",
+    "effect-str": "NAILS",
     "flags": [ "MUTATE_TRAIT" ],
     "difficulty": 1,
     "max_level": 1,
