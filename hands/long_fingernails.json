@@ -20,10 +20,17 @@
   {
     "id": "targ_long_fingernails_sp",
     "type": "SPELL",
-    "copy-from": "targ_gen_mutate_spell",
-    "description": "Long fingernails.",
+    "name": { "str": "Targeted Mutagen: Long Fingernails" }, 
+    "description": "Long Fingernails mutation spell.", 
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "mutate",
     "flags": [ "MUTATE_TRAIT" ],
-    "effect-str": "NAILS"
+    "difficulty": 1,
+    "max_level": 1,
+    "min_damage": 10000,
+    "max_damage": 10000
+  }
   },
   {
     "type": "recipe",
