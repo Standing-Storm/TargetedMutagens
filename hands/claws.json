@@ -46,7 +46,7 @@
 	    "using": [ [ "mutagen_production_standard", 25 ] ],
 	    "autolearn": true,      
 	    "components": [
-	      [ [ "targ_mutagen_claws", 1 ] ],
+	      [ [ "targ_mutagen_fingernails", 1 ] ],
 	      [ [ "iv_mutagen", 1 ] ],
 	      [ [ "purifier", 1 ] ]
 	    ],
