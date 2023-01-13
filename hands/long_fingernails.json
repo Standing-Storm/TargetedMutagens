@@ -4,7 +4,7 @@
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
     "name": { "str": "targeted mutagen: long fingernails" },
-    "description": "A processed targeted mutageni.  Looking at it makes your fingers itch.",
+    "description": "A processed targeted mutagen.  Looking at it makes your fingers itch.",
     "looks_like": "iv_mutagen",
     "color": "yellow",
     "use_action": {
