@@ -3,12 +3,12 @@
 	    "type": "item_group",
 	    "id": "science",
 	    "copy-from": "science",
-	    "extend": { "items": [ { "item": "manual_catgirl_recipes", "prob": 1 } ] }
+	    "extend": { "items": [ { "item": "manual_catgirl_recipes", "prob": 0.5 } ] }
 	  },
    {
 	     "type": "item_group",
 	    "id": "chem_lab",
 	    "copy-from": "chem_lab",
-	    "extend": { "items": [ { "item": "manual_catgirl_recipes", "prob": 2 } ] }
+	    "extend": { "items": [ { "item": "manual_catgirl_recipes", "prob": 0.5 } ] }
 	  }
   ]
