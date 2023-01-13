@@ -26,7 +26,7 @@
 			      "shape": "blast",
 			      "effect": "mutate",
 			      "effect_str": "TAIL_STUB",
-			      "flags": [ "MUTATE_TRAIT" ],
+			      "flags": [ "MUTATE_TRAIT", "SILENT" ],
 			      "difficulty": 1,
 			      "max_level": 1,
 			      "min_damage": 10000,
