@@ -1,56 +1,55 @@
 [
-		  {
-		    "id": "targ_mutagen_feline_ears",
-		    "copy-from": "iv_mutagen_flavor",
-		    "type": "COMESTIBLE",
-		    "name": { "str": "targeted mutagen: feline ears" },
-		    "description": "A processed targeted mutagenic primer. Looking at it makes your ears itch.",
-		    "looks_like": "iv_mutagen",
-		    "color": "yellow",
-		    "use_action": {
-		      "type": "cast_spell", 
-		      "spell_id": "targ_feline_ears_sp", 
-		      "no_fail": true, 
-		      "level": 0,
-		      "activation_message": "You inject the targeted mutagenic primer.",
-		      "tools_needed": { "syringe": -1 },
-		      "vitamins": [ [ "mutagen", 150, 250 ] ]
-		    }
-		  },
-		  {
-			      "id": "targ_feline_ears_sp",
-			      "type": "SPELL",
-			      "name": { "str": "Targeted Mutagen: Feline Ears" },
-			      "description": "Feline Ears mutation spell",
-			      "valid_targets": [ "self" ],
-			      "shape": "blast",
-			      "effect": "mutate",
-			      "effect_str": "FELINE_EARS",
-			      "flags": [ "MUTATE_TRAIT", "SILENT"],
-			      "difficulty": 1,
-			      "max_level": 1,
-			      "min_damage": 10000,
-			      "max_damage": 10000
-			  },
-		  {
-		    "type": "recipe",
-		    "activity_level": "LIGHT_EXERCISE",
-		    "result": "targ_mutagen_feline_ears",
-		    "category": "CC_CHEM",
-		    "subcategory": "CSC_CHEM_MUTAGEN",
-		    "skill_used": "chemistry",
-		    "skills_required": [ "firstaid", 2 ],
-		    "difficulty": 8,
-		    "time": "45 m",
-		    "batch_time_factors": [ 80, 20 ],
-		    "using": [ [ "mutagen_production_standard", 25 ] ],
-		    "book_learn": [ [ "manual_catgirl_recipes", 7 ] ],    
-		    "components": [
-		      [ [ "iv_mutagen_feline", 1] ],
-		      [ [ "iv_mutagen", 1 ] ],
-		      [ [ "purifier", 1 ] ]
-		    ],
-		    "flags": [ "SECRET" ]
-		  }
-		    
-		]
+	{
+		"id": "targ_mutagen_feline_ears",
+		"copy-from": "iv_mutagen_flavor",
+		"type": "COMESTIBLE",
+		"name": { "str": "targeted mutagen: feline ears" },
+		"description": "A processed targeted mutagen.  Looking at it makes your ears itch.",
+    "looks_like": "iv_mutagen",
+		"color": "yellow",
+		"use_action": {
+			"type": "cast_spell",
+			"spell_id": "targ_feline_ears_sp", 		
+			"no_fail": true, 
+			"level": 0,
+			"activation_message": "You inject the targeted mutagen.",
+			"tools_needed": { "syringe": -1 },
+			"vitamins": [ [ "mutagen", 150, 250 ] ]
+		}
+	},
+	{
+		"id": "targ_feline_ears_sp",
+		"type": "SPELL",
+		"name": { "str": "Targeted Mutagen: Feline Ears" },
+		"description": "Feline Ears mutation spell",
+		"valid_targets": [ "self" ],
+		"shape": "blast",
+		"effect": "mutate",
+		"effect_str": "FELINE_EARS",
+		"flags": [ "MUTATE_TRAIT", "SILENT"],
+		"difficulty": 1,
+		"max_level": 1,
+		"min_damage": 10000,
+		"max_damage": 10000
+	},
+	{
+		"type": "recipe",
+		"activity_level": "LIGHT_EXERCISE",
+		"result": "targ_mutagen_feline_ears",
+		"category": "CC_CHEM",
+		"subcategory": "CSC_CHEM_MUTAGEN",
+		"skill_used": "chemistry",
+		"skills_required": [ "firstaid", 2 ],
+		"difficulty": 8,
+		"time": "45 m",
+		"batch_time_factors": [ 80, 20 ],
+		"using": [ [ "mutagen_production_standard", 25 ] ],
+		"book_learn": [ [ "manual_catgirl_recipes", 7 ] ],   
+		"components": [
+			[ [ "iv_mutagen_feline", 1] ],
+			[ [ "iv_mutagen", 1 ] ],
+			[ [ "purifier", 1 ] ]
+		],
+		"flags": [ "SECRET" ]
+	}
+]
