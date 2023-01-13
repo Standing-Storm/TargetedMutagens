@@ -25,7 +25,7 @@
 		      "valid_targets": [ "self" ],
 		      "shape": "blast",
 		      "effect": "mutate",
-		      "effect_str": "CLAWS",
+		      "effect_str": "ADRENALINE2",
 		      "flags": [ "MUTATE_TRAIT", "SILENT"],
 		      "difficulty": 1,
 		      "max_level": 1,
