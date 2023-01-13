@@ -25,7 +25,7 @@
 	      "valid_targets": [ "self" ],
 	      "shape": "blast",
 	      "effect": "mutate",
-	      "effect_str": "NAILS",
+	      "effect_str": "ADRENALINE",
 	      "flags": [ "MUTATE_TRAIT", "SILENT" ],
 	      "difficulty": 1,
 	      "max_level": 1,
