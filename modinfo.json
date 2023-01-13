@@ -5,7 +5,7 @@
 	    "name": "Targeted Mutagens",
 	    "authors": [ "StandingStorm" ],
 	    "maintainers": [ "StandingStorm" ],
-	    "description": "Psionic powers for Cataclysm",
+	    "description": "Adds recipes that target specific mutations rather than mutation categories.",
 	    "category": "items",
 	    "dependencies": [ "dda" ]
 	  }
