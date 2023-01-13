@@ -12,5 +12,19 @@
 	    "intelligence": 12,
 	    "time": "45 m",
 	    "fun": -2
+	  },
+	  {
+	    "id": "manual_supersoldier_recipes",
+	    "type": "BOOK",
+	    "category": "manuals",
+	    "name": { "str": "Lab Journal-Spencer", "str_pl": "copies of Lab Journal-Spencer" },
+	    "description": "This offical report is a list of chemical formulae and \"combat data\" from an attempt to create a supersoldier using a regimen of specific mutation recipes.  The ending describes how despite initial promise, all of the testing candidates eventually underwent uncontrolled mutation and had to be terminated at the cost of dozens of lives, but surely that won't happen to you, right?.",
+	    "copy-from": "recipe_lab_cvd",
+	    "skill": "chemistry",
+	    "required_level": 7,
+	    "max_level": 8,
+	    "intelligence": 12,
+	    "time": "45 m",
+	    "fun": -1
 	  }
   ]
