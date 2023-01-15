@@ -44,7 +44,7 @@
 					"time": "45 m",
 					"batch_time_factors": [ 80, 20 ],
 					"using": [ [ "mutagen_production_standard", 25 ] ],
-					"book_learn": [ [ "manual_supersoldier_recipes", 7 ] ],   
+					"book_learn": [ [ "manual_supersoldier_recipes", 7 ], [ "manual_germophobe_recipes", 7 ] ],   
 					"components": [
 						 [ [ "iv_mutagen_chimera", 1 ], [ "iv_mutagen_slime", 1], [ "iv_mutagen_cattle", 1 ],[ "iv_mutagen_medical", 1 ], [ "iv_mutagen_rat", 1 ],  [ "iv_mutagen_troglobite", 1 ], [ "iv_mutagen_plant", 1 ] ],
 						[ [ "iv_mutagen", 1 ] ],
