@@ -18,7 +18,21 @@
 	    "type": "BOOK",
 	    "category": "manuals",
 	    "name": { "str": "Lab Journal-Spencer", "str_pl": "copies of Lab Journal-Spencer" },
-	    "description": "This offical report is a list of chemical formulae and \"combat data\" from an attempt to create a supersoldier using a regimen of specific mutation recipes.  The ending describes how despite initial promise, all of the testing candidates eventually underwent uncontrolled mutation and had to be terminated at the cost of dozens of lives, but surely that won't happen to you, right?.",
+	    "description": "This offical report is a list of chemical formulae and \"combat data\" from an attempt to create a supersoldier using a regimen of specific mutation recipes.  The ending describes how despite initial promise, all of the testing candidates eventually underwent uncontrolled mutation and had to be terminated at the cost of dozens of lives, but surely that won't happen to you, right?",
+	    "copy-from": "recipe_lab_cvd",
+	    "skill": "chemistry",
+	    "required_level": 7,
+	    "max_level": 8,
+	    "intelligence": 12,
+	    "time": "45 m",
+	    "fun": -1
+	  },
+	  {
+	    "id": "manual_molepeople_recipes",
+	    "type": "BOOK",
+	    "category": "manuals",
+	    "name": { "str": "Lab Journal-Cheek", "str_pl": "copies of Lab Journal-Cheek" },
+	    "description": "This is a proposal to use mutagen to create a subservient species of workers to help staff XEDRA laboratories.  It goes into great detail about how they would be adapted to life underground, capable of sustaining 16- to 18-hour work days without rest.  At the end is scrawled a simple \"Denied.\"",
 	    "copy-from": "recipe_lab_cvd",
 	    "skill": "chemistry",
 	    "required_level": 7,
@@ -27,4 +41,5 @@
 	    "time": "45 m",
 	    "fun": -1
 	  }
+	
   ]
