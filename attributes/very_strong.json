@@ -18,7 +18,7 @@
 				}
 			},
 			{
-				"id": "targ_strong_sp",
+				"id": "targ_very_strong_sp",
 				"type": "SPELL",
 				"name": { "str": "Targeted Mutagen: Very Strong" },
 				"description": "Very Strong mutation spell",
