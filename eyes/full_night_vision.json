@@ -44,7 +44,7 @@
     "time": "45 m",
     "batch_time_factors": [ 80, 20 ],
     "using": [ [ "mutagen_production_standard", 25 ] ],
-    "book_learn": [ [ "manual_supersoldier_recipes", 7 ] ],  
+    "book_learn": [ [ "manual_supersoldier_recipes", 7 ], [ "manual_molepeople_recipes", 7 ] ],  
     "components": [
       [ [ "targ_mutagen_high_night_vision", 1 ] ],
       [ [ "iv_mutagen", 1 ] ],
