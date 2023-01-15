@@ -46,7 +46,7 @@
 		"type": "BOOK",
 		"category": "manuals",
 		"name": { "str": "Lab Journal-O'Regan", "str_pl": "copies of Lab Journal-O'Regan" },
-		"description": "This loose collection of documents is a series of near-paranoid rantings about the dangers of contamination and risks of infection, as well as a series of chemical formulae designed to create an innoculation course to protect against them.  On the other hand, what with the way the world ended, maybe the author was on to something.",
+		"description": "This loose collection of documents is a group of near-paranoid rantings about the dangers of contamination and risks of infection, as well as a series of chemical formulae designed to create an innoculation course to protect against them.  On the other hand, what with the way the world ended, maybe the author was on to something.",
 		"copy-from": "recipe_lab_cvd",
 		"skill": "chemistry",
 		"required_level": 7,
