@@ -9,7 +9,7 @@
 				"color": "yellow",
 				"use_action": {
 					"type": "cast_spell", 
-					"spell_id": "targ_quick_sp", 
+					"spell_id": "targ_infection_resistant_sp", 
 					"no_fail": true, 
 					"level": 0,
 					"activation_message": "You inject the targeted mutagen.",
@@ -18,7 +18,7 @@
 				}
 			},
 			{
-				"id": "targ_quick_sp",
+				"id": "targ_infection_resistant_sp",
 				"type": "SPELL",
 				"name": { "str": "Targeted Mutagen: Infection Resistant." },
 				"description": "Infection Resistant mutation spell",
