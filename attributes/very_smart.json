@@ -1,0 +1,55 @@
+[
+						{
+							"id": "targ_mutagen_very_smart",
+							"copy-from": "iv_mutagen_flavor",
+							"type": "COMESTIBLE",
+							"name": { "str": "targeted mutagen: very smart" },
+							"description": "A processed targeted mutagen.  Looking at it makes you feel shrewd.",
+					    "looks_like": "iv_mutagen",
+							"color": "yellow",
+							"use_action": {
+								"type": "cast_spell",
+								"spell_id": "targ_very_smart_sp", 		
+								"no_fail": true, 
+								"level": 0,
+								"activation_message": "You inject the targeted mutagen.",
+								"tools_needed": { "syringe": -1 },
+								"vitamins": [ [ "mutagen", 150, 250 ] ]
+							}
+						},
+						{
+							"id": "targ_very_smart_sp",
+							"type": "SPELL",
+							"name": { "str": "Targeted Mutagen: Very Smart" },
+							"description": "Very Smart mutation spell",
+							"valid_targets": [ "self" ],
+							"shape": "blast",
+							"effect": "mutate",
+							"effect_str": "INT_UP_2",
+							"flags": [ "MUTATE_TRAIT", "SILENT"],
+							"difficulty": 1,
+							"max_level": 1,
+							"min_damage": 10000,
+							"max_damage": 10000
+						},
+						{
+							"type": "recipe",
+							"activity_level": "LIGHT_EXERCISE",
+							"result": "targ_mutagen_very_smart",
+							"category": "CC_CHEM",
+							"subcategory": "CSC_CHEM_MUTAGEN",
+							"skill_used": "chemistry",
+							"skills_required": [ "firstaid", 2 ],
+							"difficulty": 8,
+							"time": "45 m",
+							"batch_time_factors": [ 80, 20 ],
+							"using": [ [ "mutagen_production_standard", 25 ] ],
+							"book_learn": [ ],   
+							"components": [
+								[ [ "targ_mutagen_smart", 1] ],
+								[ [ "iv_mutagen", 1 ] ],
+								[ [ "purifier", 1 ] ]
+							],
+							"flags": [ "SECRET" ]
+			      }
+					]
