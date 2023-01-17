@@ -14,4 +14,4 @@ No, since there's still randomness in acquiring the recipes. But I don't really 
 
 NOTE: HUMAN SAMPLES
 
-In order to prevent every single targeted mutagen from being cannibalism, since comestibles inherit the materials of their ingredients (see https://github.com/CleverRaven/Cataclysm-DDA/issues/56937 ), this mod also changes human samples. Human samples found in labs contain "Human genetic material" and are not cannibalism, whereas human samples obtained through dissection contain "human flesh" and are cannibalism. If you disagree or are uninterested in this change, just delete the "human_samples" folder.
+In order to prevent every single targeted mutagen from being cannibalism, since comestibles inherit the materials of their ingredients (see https://github.com/CleverRaven/Cataclysm-DDA/issues/56937 ), this mod also changes human samples. Human samples found in labs contain "Human genetic material" and are not cannibalism, whereas human samples obtained through dissection contain "human flesh" and are cannibalism. If you disagree with or are uninterested in this change, just delete the "human_samples" folder.
