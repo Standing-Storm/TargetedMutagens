@@ -39,7 +39,7 @@
     "copy-from": "mutagen_sample",
     "color": "black_red",
     "name": { "str": "human sample" },
-    "description": "A slurry of purity.",
+    "description": "A fresh slurry of purity.",
     "looks_like": "medical_sample",
     "material": [ "hflesh", "hblood" ]
   }
