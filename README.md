@@ -1,5 +1,7 @@
 # Targeted Mutagens
 
+EDIT: Currently on hold while I try to figure out how to make targeted mutagens not count as cannibalism (see: https://github.com/CleverRaven/Cataclysm-DDA/issues/56937 )
+
 A mod providing craftable mutagens targeting specific traits for Cataclysm: Dark Days Ahead. Very WIP--there's a lot of them to go through.
 
 This might seem overpowered at first glance but I've tried to balance it out--each targeted mutation requires one appropriate primer, one mutagenic catalyst, and one purifier; there are no threshold targets; there are no post-threshold targets; most starting traits are not included (a lot of them wouldn't make sense anyway--"targeted mutagen: cannibal"?); and none of the recipes are auto-learned. If you have Robust Genetics you can get way more bang for your buck with a catalyst and a couple of primers rather than trying to hunt down and craft every single targeted mutagen you want. 
