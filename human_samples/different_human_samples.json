@@ -80,7 +80,8 @@
 	    "using": [ [ "serum_production_standard", 37 ] ],
 	    "components": [ 
             [ [ "purifier", 2 ] ], 
-            [ [ "human_sample", 2 ], [ "human_sample_fresh", 2 ]  ],
+            [ [ "human_sample", 2 ], [ "human_sample_fresh", 2 ]  ]
+	    ],
 	    "flags": [ "SECRET" ]
 	  },
 	{
