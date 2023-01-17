@@ -82,7 +82,8 @@
             [ [ "purifier", 2 ] ], 
             [ [ "human_sample", 2 ], [ "human_sample_fresh", 2 ]  ],
 	    "flags": [ "SECRET" ]
-	  },{
+	  },
+	{
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "medical_sample",
