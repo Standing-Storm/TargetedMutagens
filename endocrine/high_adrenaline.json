@@ -4,7 +4,7 @@
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
     "name": { "str": "targeted mutagen: high adrenaline" },
-    "description": "A processed targeted mutageni.  Looking at it raises the hairs on the back of your neck.",
+    "description": "A processed targeted mutagen.  Looking at it raises the hairs on the back of your neck.",
     "looks_like": "iv_mutagen",
     "color": "yellow",
     "use_action": {
