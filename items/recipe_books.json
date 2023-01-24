@@ -54,6 +54,19 @@
 		"intelligence": 12,
 		"time": "45 m",
 		"fun": -2
-	
-	}
+	},
+	  {
+	    "id": "manual_fishman_recipes",
+	    "type": "BOOK",
+	    "category": "manuals",
+	    "name": { "str": "Lab Journal-Gilman", "str_pl": "copies of Lab Journal-Gilman" },
+	    "description": "A formal proposal for \"Project INNSMOUTH\" to create a species of underwater-adapted workers to create underwater bases that would be more isolated, thus providing greater safety in the event something called an \"immersion incident.\"  At the end is scrawled a simple \"Denied,\" and below in a different hand is written \"Dr. Gilman, please review the policy manual on appropriate project designations.\"",
+	    "copy-from": "recipe_lab_cvd",
+	    "skill": "chemistry",
+	    "required_level": 7,
+	    "max_level": 8,
+	    "intelligence": 12,
+	    "time": "45 m",
+	    "fun": -2
+	  }
   ]
