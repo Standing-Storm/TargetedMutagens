@@ -1,0 +1,55 @@
+[
+	{
+		"id": "targ_mutagen_slimy",
+		"copy-from": "iv_mutagen_flavor",
+		"type": "COMESTIBLE",
+		"name": { "str": "targeted mutagen: slimy" },
+		"description": "A processed targeted mutagen.  Looking at it makes your skin itch.",
+    "looks_like": "iv_mutagen",
+		"color": "yellow",
+		"use_action": {
+			"type": "cast_spell",
+			"spell_id": "targ_slimy_sp", 		
+			"no_fail": true, 
+			"level": 0,
+			"activation_message": "You inject the targeted mutagen.",
+			"tools_needed": { "syringe": -1 },
+			"vitamins": [ [ "mutagen", 150, 250 ] ]
+		}
+	},
+	{
+		"id": "targ_slimy_sp",
+		"type": "SPELL",
+		"name": { "str": "Targeted Mutagen: Slimy" },
+		"description": "Slimy mutation spell",
+		"valid_targets": [ "self" ],
+		"shape": "blast",
+		"effect": "mutate",
+		"effect_str": "SLIMY",
+		"flags": [ "MUTATE_TRAIT", "SILENT"],
+		"difficulty": 1,
+		"max_level": 1,
+		"min_damage": 10000,
+		"max_damage": 10000
+	},
+	{
+		"type": "recipe",
+		"activity_level": "LIGHT_EXERCISE",
+		"result": "targ_mutagen_slimy",
+		"category": "CC_CHEM",
+		"subcategory": "CSC_CHEM_MUTAGEN",
+		"skill_used": "chemistry",
+		"skills_required": [ "firstaid", 2 ],
+		"difficulty": 8,
+		"time": "45 m",
+		"batch_time_factors": [ 80, 20 ],
+		"using": [ [ "mutagen_production_standard", 25 ] ],
+		"book_learn": [ [ "manual_fishman_recipes", 7 ] ],   
+		"components": [
+			[ [ "iv_mutagen_fish", 1 ], [ "iv_mutagen_slime", 1 ], [ "iv_mutagen_troglobite", 1 ], [ "iv_mutagen_cephalopod", 1 ], [ "iv_mutagen_snail", 1 ], [ "iv_mutagen_batrachian", 1 ] ],
+			[ [ "iv_mutagen", 1 ] ],
+			[ [ "purifier", 1 ] ]
+		],
+		"flags": [ "SECRET" ]
+	}
+]
