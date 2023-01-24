@@ -3,7 +3,7 @@
 					"id": "targ_mutagen_quick_pain_recovery",
 					"copy-from": "iv_mutagen_flavor",
 					"type": "COMESTIBLE",
-					"name": { "str": "targeted mutagen: quick_pain recovery" },
+					"name": { "str": "targeted mutagen: quick pain recovery" },
 					"description": "A processed targeted mutagen.  Looking at it, you feel great.",
 					"looks_like": "iv_mutagen",
 					"color": "yellow",
