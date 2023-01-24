@@ -18,7 +18,7 @@
 					}
 				},
 				{
-					"id": "targ_disease_resistant_sp",
+					"id": "targ_pain_resistant_sp",
 					"type": "SPELL",
 					"name": { "str": "Targeted Mutagen: Pain Resistant." },
 					"description": "Pain Resistant mutation spell",
