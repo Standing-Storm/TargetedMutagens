@@ -44,7 +44,7 @@
 			"time": "45 m",
 			"batch_time_factors": [ 80, 20 ],
 			"using": [ [ "mutagen_production_standard", 25 ] ],
-			"book_learn": [ [ "manual_catgirl_recipes", 7 ] ], 
+			"book_learn": [ ], 
 			"components": [
 				[ [ "iv_mutagen_batrachian", 1 ], [ "iv_mutagen_snail", 1], [ "iv_mutagen_slime", 1], [ "iv_mutagen_troglobite", 1], [ "iv_mutagen_spider", 1], [ "iv_mutagen_chimera", 1], [ "iv_mutagen_cephalopod", 1] ],
 				[ [ "iv_mutagen", 1 ] ],
