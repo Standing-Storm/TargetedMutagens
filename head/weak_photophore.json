@@ -44,7 +44,7 @@
 		"time": "45 m",
 		"batch_time_factors": [ 80, 20 ],
 		"using": [ [ "mutagen_production_standard", 25 ] ],
-		"book_learn": [  ],   
+		"book_learn": [ [ "manual_fishman_recipes", 7 ] ], 
 		"components": [
 			[ [ "targ_mutagen_reflex_photophore", 1 ] ],
 			[ [ "iv_mutagen", 1 ] ],
