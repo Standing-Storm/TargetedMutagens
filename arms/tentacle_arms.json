@@ -46,7 +46,7 @@
 					"using": [ [ "mutagen_production_standard", 25 ] ],
 					"book_learn": [ ],   
 					"components": [
-						 [ [ "targ_mutagen_cephalopod", 1 ] ],
+						 [ [ "iv_mutagen_cephalopod", 1 ] ],
 						[ [ "iv_mutagen", 1 ] ],
 						[ [ "purifier", 1 ] ]
 					],
