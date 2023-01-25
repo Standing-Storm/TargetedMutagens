@@ -12,7 +12,7 @@ Note: this mod DOES work for NPCs! Just have them use the mutagen out of your in
 
 BUT DOESN'T THIS GET RID OF THE ESSENTIAL RANDOMNESS OF MUTATIONS?
 
-No, since there's still randomness in acquiring the recipes. But I don't really see this (and am not building this) as a way to complete a specific path in exactly the way you want. This is for adding a few bespoke mutations onto a package you've already selected, or finding the recipe for some mutations that change your choice of threshold because now you meet more of the prerequisites of a different path. It's also a way to keep mutagen crafting going into the late game--instead of making a single big batch and mutating like crazy and then being done until your inevitable death, now you'll want to have some on hand in case you find a recipe for something interesting you could add to your genetic arsenal. 
+No, since there's still randomness in acquiring the recipes. But I don't really see this (and am not building this) as a way to complete a specific path in exactly the way you want. This is for adding a few bespoke mutations onto a package you've already selected, or finding the recipe for some mutations that change your choice of threshold because now you meet more of the prerequisites of a different path. It's also a way to keep mutagen crafting going into the very late game--instead of making a single big batch and mutating like crazy and then being done until your inevitable death, now you'll want to have some on hand in case you find a recipe for something interesting you could add to your genetic arsenal. 
 
 NOTE: HUMAN SAMPLES
 
