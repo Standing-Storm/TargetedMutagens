@@ -4,7 +4,7 @@
 					"copy-from": "iv_mutagen_flavor",
 					"type": "COMESTIBLE",
 					"name": { "str": "targeted mutagen: freakishly huge" },
-					"description": "A processed targeted mutagen.  Looking at it, your arms feel rubbery.",
+					"description": "A processed targeted mutagen.  Looking at it makes your bones ache.",
 					"looks_like": "iv_mutagen",
 					"color": "yellow",
 					"use_action": {
