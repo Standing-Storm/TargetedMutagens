@@ -1,0 +1,9 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_scientist_death_drops",
+    "copy-from": "mon_zombie_scientist_death_drops",
+    "extend": { "entries": [ { "item": "mobile_memory_card_science", "prob": 2 } ] }
+  }
+]
