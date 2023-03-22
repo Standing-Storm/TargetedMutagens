@@ -35,7 +35,7 @@
 	  {
 	    "type": "recipe",
 	    "activity_level": "LIGHT_EXERCISE",
-	    "result": "targ_mutagen_fey_eyes",
+	    "result": "targ_mutagen_cephalopod_eyes",
 	    "category": "CC_CHEM",
 	    "subcategory": "CSC_CHEM_MUTAGEN",
 	    "skill_used": "chemistry",
