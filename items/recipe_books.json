@@ -4,7 +4,7 @@
 	    "type": "BOOK",
 	    "category": "manuals",
 	    "name": { "str": "Lab Journal-Takada", "str_pl": "copies of Lab Journal-Takada" },
-	    "description": "This notebook is an extremely embarrassing list of all the perfect qualitie of the author's ideal wife.  Amidst the rambling, however, some chemical formulae catch your eye.",
+	    "description": "This notebook is an extremely embarrassing list of all the perfect qualities of the author's ideal wife.  Amidst the rambling, however, some chemical formulae catch your eye.",
 	    "copy-from": "recipe_lab_cvd",
 	    "skill": "chemistry",
 	    "required_level": 7,
