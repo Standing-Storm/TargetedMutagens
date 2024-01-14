@@ -1,55 +1,64 @@
 [
-	{
-		"id": "targ_mutagen_long_tail",
-		"copy-from": "iv_mutagen_flavor",
-		"type": "COMESTIBLE",
-		"name": { "str": "targeted mutagen: long tail" },
-		"description": "A processed targeted mutagenic.  Looking at it makes the base of your spine itch.",
-		"looks_like": "iv_mutagen",
-		"color": "yellow",
-		"use_action": {
-			"type": "cast_spell", 
-			"spell_id": "targ_long_tail_sp", 
-			"no_fail": true, 
-			"level": 0,
-			"activation_message": "You inject the targeted mutagen.",
-			"tools_needed": { "syringe": -1 },
-			"vitamins": [ [ "mutagen", 150, 250 ] ]
-		}
-	},
-	{
-		"id": "targ_long_tail_sp",
-		"type": "SPELL",
-		"name": { "str": "Targeted Mutagen: Long Tail" },
-		"description": "Long Tail mutation spell",
-		"valid_targets": [ "self" ],
-		"shape": "blast",
-		"effect": "mutate",
-		"effect_str": "TAIL_LONG",
-		"flags": [ "MUTATE_TRAIT", "SILENT"],
-		"difficulty": 1,
-		"max_level": 1,
-		"min_damage": 10000,
-		"max_damage": 10000
-	},
-	{
-		"type": "recipe",
-		"activity_level": "LIGHT_EXERCISE",
-		"result": "targ_mutagen_long_tail",
-		"category": "CC_CHEM",
-		"subcategory": "CSC_CHEM_MUTAGEN",
-		"skill_used": "chemistry",
-		"skills_required": [ "firstaid", 2 ],
-		"difficulty": 8,
-		"time": "45 m",
-		"batch_time_factors": [ 80, 20 ],
-		"using": [ [ "mutagen_production_standard", 25 ] ],
-		"book_learn": [ [ "manual_catgirl_recipes", 7 ] ],
-		"components": [
-			[ [ "targ_mutagen_tail_stub", 1 ] ],
-			[ [ "iv_mutagen", 1 ] ],
-			[ [ "purifier", 1 ] ]
-		],
-		"flags": [ "SECRET" ]
-	}	    
+  {
+    "id": "targ_mutagen_long_tail",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "targeted mutagen: long tail" },
+    "description": "A processed targeted mutagenic.  Looking at it makes the base of your spine itch.",
+    "looks_like": "iv_mutagen",
+    "color": "yellow",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Inject the Targeted Mutagen.",
+      "effect_on_conditions": [ "EOC_TARGETED_LONG_TAIL" ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TARGETED_LONG_TAIL",
+    "condition": { "u_has_item": "syringe" },
+    "effect": [
+      { "u_assign_activity": "ACT_TARGETED_MUTAGENS_INJECT_MUTAGEN", "duration": "5 minutes" },
+      { "queue_eocs": "EOC_TARGETED_LONG_TAIL_2", "time_in_future": [ "45 minutes", "240 minutes" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TARGETED_LONG_TAIL_2",
+    "effect": [
+      { "u_cast_spell": { "id": "targ_long_tail_sp", "hit_self": true } },
+      { "math": [ "u_vitamin('instability')", "+=", "rng(100,150)" ] }
+    ]
+  },
+  {
+    "id": "targ_long_tail_sp",
+    "type": "SPELL",
+    "name": { "str": "Targeted Mutagen: Long Tail" },
+    "description": "Long Tail mutation spell",
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "mutate",
+    "effect_str": "TAIL_LONG",
+    "flags": [ "MUTATE_TRAIT", "SILENT" ],
+    "difficulty": 1,
+    "max_level": 1,
+    "min_damage": 10000,
+    "max_damage": 10000
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "targ_mutagen_long_tail",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "skills_required": [ "firstaid", 2 ],
+    "difficulty": 8,
+    "time": "45 m",
+    "batch_time_factors": [ 80, 20 ],
+    "using": [ [ "mutagen_production_standard", 25 ] ],
+    "book_learn": [ [ "manual_catgirl_recipes", 7 ] ],
+    "components": [ [ [ "targ_mutagen_tail_stub", 1 ] ], [ [ "iv_mutagen", 1 ] ], [ [ "purifier", 1 ] ] ],
+    "flags": [ "SECRET" ]
+  }
 ]

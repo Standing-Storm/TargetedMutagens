@@ -1,55 +1,64 @@
 [
-	  {
-	    "id": "targ_mutagen_whiskers",
-	    "copy-from": "iv_mutagen_flavor",
-	    "type": "COMESTIBLE",
-	    "name": { "str": "targeted mutagen: whiskers" },
-	    "description": "A processed targeted mutagen.  Looking at it makes the sides of your mouth itch.",
-	    "looks_like": "iv_mutagen",
-	    "color": "yellow",
-	    "use_action": {
-	      "type": "cast_spell", 
-	      "spell_id": "targ_whiskers_sp", 
-	      "no_fail": true, 
-	      "level": 0,
-	      "activation_message": "You inject the targeted mutagen.",
-	      "tools_needed": { "syringe": -1 },
-	      "vitamins": [ [ "mutagen", 150, 250 ] ]
-	    }
-	  },
-	  {
-			"id": "targ_whiskers_sp",
-			"type": "SPELL",
-			"name": { "str": "Targeted Mutagen: Whiskers" },
-			"description": "Whiskers mutation spell",
-			"valid_targets": [ "self" ],
-			"shape": "blast",
-			"effect": "mutate",
-			"effect_str": "WHISKERS",
-			"flags": [ "MUTATE_TRAIT", "SILENT" ],
-			"difficulty": 1,
-			"max_level": 1,
-			"min_damage": 10000,
-			"max_damage": 10000
-		},
-	  {
-	    "type": "recipe",
-	    "activity_level": "LIGHT_EXERCISE",
-	    "result": "targ_mutagen_whiskers",
-	    "category": "CC_CHEM",
-	    "subcategory": "CSC_CHEM_MUTAGEN",
-	    "skill_used": "chemistry",
-	    "skills_required": [ "firstaid", 2 ],
-	    "difficulty": 8,
-	    "time": "45 m",
-	    "batch_time_factors": [ 80, 20 ],
-	    "using": [ [ "mutagen_production_standard", 25 ] ],
-	    "book_learn": [ [ "manual_molepeople_recipes", 7 ] ],    
-	    "components": [
-	      [ [ "iv_mutagen_feline", 1 ], [ "iv_mutagen_rabbit", 1 ] ],
-	      [ [ "iv_mutagen", 1 ] ],
-	      [ [ "purifier", 1 ] ]
-	    ],
-	    "flags": [ "SECRET" ]
-	  }
-	]
+  {
+    "id": "targ_mutagen_whiskers",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "targeted mutagen: whiskers" },
+    "description": "A processed targeted mutagen.  Looking at it makes the sides of your mouth itch.",
+    "looks_like": "iv_mutagen",
+    "color": "yellow",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Inject the Targeted Mutagen.",
+      "effect_on_conditions": [ "EOC_TARGETED_MUTAGEN_WHISKERS" ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TARGETED_MUTAGEN_WHISKERS",
+    "condition": { "u_has_item": "syringe" },
+    "effect": [
+      { "u_assign_activity": "ACT_TARGETED_MUTAGENS_INJECT_MUTAGEN", "duration": "5 minutes" },
+      { "queue_eocs": "EOC_TARGETED_MUTAGEN_WHISKERS_2", "time_in_future": [ "45 minutes", "240 minutes" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TARGETED_MUTAGEN_WHISKERS_2",
+    "effect": [
+      { "u_cast_spell": { "id": "targ_whiskers_sp", "hit_self": true } },
+      { "math": [ "u_vitamin('instability')", "+=", "rng(100,150)" ] }
+    ]
+  },
+  {
+    "id": "targ_whiskers_sp",
+    "type": "SPELL",
+    "name": { "str": "Targeted Mutagen: Whiskers" },
+    "description": "Whiskers mutation spell",
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "mutate",
+    "effect_str": "WHISKERS",
+    "flags": [ "MUTATE_TRAIT", "SILENT" ],
+    "difficulty": 1,
+    "max_level": 1,
+    "min_damage": 10000,
+    "max_damage": 10000
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "targ_mutagen_whiskers",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "skills_required": [ "firstaid", 2 ],
+    "difficulty": 8,
+    "time": "45 m",
+    "batch_time_factors": [ 80, 20 ],
+    "using": [ [ "mutagen_production_standard", 25 ] ],
+    "book_learn": [ [ "manual_molepeople_recipes", 7 ] ],
+    "components": [ [ [ "iv_mutagen_feline", 1 ], [ "iv_mutagen_rabbit", 1 ] ], [ [ "iv_mutagen", 1 ] ], [ [ "purifier", 1 ] ] ],
+    "flags": [ "SECRET" ]
+  }
+]

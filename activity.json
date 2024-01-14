@@ -1,0 +1,10 @@
+[
+  {
+    "id": "ACT_TARGETED_MUTAGENS_INJECT_MUTAGEN",
+    "type": "activity_type",
+    "activity_level": "LIGHT_EXERCISE",
+    "interruptable": false,
+    "verb": "injecting",
+    "based_on": "time"
+  }
+]
