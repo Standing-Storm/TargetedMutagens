@@ -61,7 +61,7 @@
     "batch_time_factors": [ 80, 20 ],
     "using": [ [ "mutagen_production_standard", 25 ] ],
     "book_learn": [  ],
-    "components": [ [ [ "targ_mutagen_VERY_QUICK_PAIN_RECOVERY_pain_recovery", 1 ] ], [ [ "iv_mutagen", 1 ] ], [ [ "purifier", 1 ] ] ],
+    "components": [ [ [ "targ_mutagen_quick_pain_recovery", 1 ] ], [ [ "iv_mutagen", 1 ] ], [ [ "purifier", 1 ] ] ],
     "flags": [ "SECRET" ]
   }
 ]

@@ -58,7 +58,7 @@
     "batch_time_factors": [ 80, 20 ],
     "using": [ [ "mutagen_production_standard", 25 ] ],
     "book_learn": [ [ "manual_germophobe_recipes", 7 ] ],
-    "components": [ [ [ "targ_mutagen_infection_IMMUNE", 1 ] ], [ [ "iv_mutagen", 1 ] ], [ [ "purifier", 1 ] ] ],
+    "components": [ [ [ "targ_mutagen_infection_resistant", 1 ] ], [ [ "iv_mutagen", 1 ] ], [ [ "purifier", 1 ] ] ],
     "flags": [ "SECRET" ]
   }
 ]
