@@ -10,12 +10,12 @@
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Inject the Targeted Mutagen.",
-      "effect_on_conditions": [ "EOC_TARGETED_SMOOTH_SKIN" ]
+      "effect_on_conditions": [ "EOC_TARGETED_EPICUTICLE" ]
     }
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_TARGETED_SMOOTH_SKIN",
+    "id": "EOC_TARGETED_EPICUTICLE",
     "condition": { "u_has_item": "syringe" },
     "effect": [
       { "u_assign_activity": "ACT_TARGETED_MUTAGENS_INJECT_MUTAGEN", "duration": "5 minutes" },
